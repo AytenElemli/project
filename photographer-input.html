@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="idInp" type="text" class="validate">
+                    <label for="id">id</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="imageInp" type="text" class="validate">
+                    <label for="image">image</label>
+                </div>
+                <button class="btn" id="insert">Insert</button>
+                <button class="btn" id="update">Update</button>
+                <button class="btn" id="remove">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+ 
+        const firebaseConfig = {
+          apiKey: "AIzaSyCB3-RbdW55uNR_yXgnA3ke7SJFdDN65RU",
+          authDomain: "photographer-1263f.firebaseapp.com",
+          projectId: "photographer-1263f",
+          storageBucket: "photographer-1263f.appspot.com",
+          messagingSenderId: "492507784164",
+          appId: "1:492507784164:web:19ef61a6564f69a6879df1"
+        };
+      
+    
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, set, ref, update, remove, get, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+        const db = getDatabase();
+
+        const imageInp = document.getElementById("imageInp");
+        const insertBtn = document.getElementById("insert");
+        function insertData(){
+           set(ref(db, "photographer/"+idInp.value), {
+                
+                image: imageInp.value,
+            })
+                .then(alert("Hershey bomba kimidir!!"))
+                .catch(err => alert(err))
+        }
+        insertBtn.addEventListener('click', insertData);
+
+
+
+
+        function UpdateData() {
+            update(ref(db, "photographer/" + idInp.value), {
+                image: imageInp.value,
+            })
+                .then(alert("Hershey bomba kimidir!!"))
+                .catch(err => alert(err))
+        }
+        const updateBtn = document.getElementById("update");
+
+
+
+
+        function RemoveData() {
+            remove(ref(db, "photographer/", idInp.value))
+                .then("Element silindi!")
+                .catch(err => alert(err))
+        }
+        const removeBtn = document.getElementById("remove");
+      </script>
+      <script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

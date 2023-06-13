@@ -1,0 +1,849 @@
+@import 'partials/variables';
+
+.mt-6 {
+    margin-top: 4.5em;
+}
+
+.mt-7 {
+    margin-top: 5.5em;
+}
+
+.mt-8 {
+    margin-top: 6.5em;
+}
+
+.mt-9 {
+    margin-top: 7.5em;
+}
+
+.mt-10 {
+    margin-top: 20em;
+}
+
+#entry {
+    width: 100%;
+    background-image: url(https://s.psecn.photoshelter.com/ps-inc/website/graphics/1_hero_image-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .var {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 22px;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+
+    .btn {
+        padding: 2px 20px;
+        border: 2px solid $color-white;
+        border-radius: 30px;
+        font-size: 20px;
+        color: $color-white;
+
+        &:hover {
+            color: $color-black;
+            ;
+            background-color: $color-white;
+        }
+    }
+
+    .entry-text {
+        padding: 300px 0;
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+}
+
+#PhotoShelter-Solutions {
+    .brend-text {
+        padding: 20px;
+
+        .btn {
+            border: 1px solid $darkcyan;
+            background-color: $darkcyan;
+            padding: 10px 20px;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    .icon-img {
+        padding: 80px 0;
+    }
+
+    .forbrend {
+        padding: 60px 0;
+    }
+
+    .img-photoshelter {
+        width: 500px;
+    }
+
+    .forfotoqraf {
+        padding: 60px 0;
+    }
+
+    .fotoqraf-text {
+        padding: 20px;
+
+        .btn {
+            border: 2px solid $btn-yellow;
+            background-color: $btn-yellow;
+            padding: 10px 20px;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: $color-white;
+            }
+        }
+    }
+
+
+}
+
+#promise {
+    width: 100%;
+    background-image: url(https://s.psecn.photoshelter.com/ps-inc/website/graphics/3_Our-Promises-To-You_BACKGROUND_1X.png);
+    background-size: cover;
+
+    h1 {
+        padding: 20px 0;
+    }
+
+    .promise-imgs {
+        position: relative;
+        bottom: 100px;
+
+    }
+
+    .promise-text {
+        font-size: 20px;
+
+        h4 {
+            padding: 40px 0;
+        }
+    }
+
+}
+
+#creatives {
+
+    .video-text {
+        h1 {
+            padding: 80px 0;
+            font-size: 60px;
+        }
+    }
+
+    .Loved-by-Creatives {
+        .data-card {
+            padding: 0px 0px;
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .data-card-text {
+            background-color: $color-black;
+            opacity: 0.5;
+            position: absolute;
+            bottom: 30px;
+            padding: 25px;
+
+            h3 {
+                color: $btn-yellow;
+            }
+        }
+    }
+}
+
+#index-end {
+    background-color: rgb(45, 45, 45);
+
+    .end-center {
+        ul li {
+            list-style: none;
+
+            a {
+                font-size: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#About-header {
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url("http://psincprod.wpengine.com/wp-content/uploads/2021/10/ps-inc-homepage-hero-image-1-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .about-header-text {
+        padding: 300px 0;
+    }
+
+    .about-collapse {
+        flex-grow: 0 !important;
+
+        a {
+            font-size: 20px;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
+
+#About-main {
+    .about-main-text {
+        p {
+            font-size: 17px;
+        }
+
+        .btn {
+            background-color: $btn-blue;
+            color: $color-white;
+            padding: 7px 10px;
+            border: 2px solid $btn-blue;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: $color-white;
+                color: $btn-blue;
+            }
+        }
+    }
+
+    .our-values {
+        width: 100%;
+        background-image: url("http://psincprod.wpengine.com/wp-content/uploads/2021/10/our-values-background-1.png");
+        background-position: center;
+        background-size: cover;
+
+        .our-values-text {
+            padding: 200px 0;
+        }
+    }
+
+    .img-about {
+        width: 550px;
+    }
+}
+
+#Careers-header {
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url("http://devenvcompany.wpengine.com/wp-content/uploads/2021/10/join-our-team-hero-image-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .careers-header-text {
+        padding: 300px 0;
+    }
+
+    .careers-collapse {
+        flex-grow: 0 !important;
+
+        a {
+            font-size: 20px;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+}
+
+#careers-benefit {
+    .careers-main {
+        width: 100%;
+        background-image: url("http://psincprod.wpengine.com/wp-content/uploads/2021/10/perks-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .careers-main-text {
+            padding: 50px 0;
+
+            h2 {
+                color: $btn-yellow;
+            }
+        }
+
+        .careers-main-img {
+            img {
+                width: 320px;
+            }
+        }
+    }
+}
+
+#inclusivity {
+    .inclusivity-text {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+#team-header {
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url("http://psincprod.wpengine.com/wp-content/uploads/2021/10/team-hero-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .team-collapse {
+        flex-grow: 0 !important;
+
+        a {
+            font-size: 20px;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
+
+#team-main {
+    .team-main-text {
+        width: 80%;
+        margin-left: 10%;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .team-main-img {
+        margin-left: 40px;
+        width: 260px;
+    }
+
+    .founders-end {
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15)), url("http://psincprod.wpengine.com/wp-content/uploads/2021/10/join.png");
+
+        .founders-end-text {
+            padding: 70px 200px;
+
+            .btn {
+                padding: 10px 10px;
+                border: 2px solid $color-white;
+                border-radius: 50px;
+
+            }
+        }
+    }
+}
+
+#photographer-header {
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://www.photoshelter.com/img-get2/I0000QcGjszrks0E/sec=wd0sd0oe0lwe0ms1000ed20230613OCJkt3XU10kIVmD/fill=1240x827);
+    background-position: bottom;
+    background-size: cover;
+
+    .photographer-header-text {
+        width: 400px;
+        padding: 300px 0;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            background-color: rgb(255, 201, 83);
+            border: 2px solid rgb(255, 201, 83);
+            border-radius: 50px;
+            color: $color-black;
+
+        }
+    }
+}
+
+#uk {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(https://s.psecn.photoshelter.com/ps-mkt/img/core/photoshelter-brands-banner-708101.jpg);
+    background-position: center;
+    background-size: 100%;
+
+    .btn {
+        padding: 15px 15px;
+        background-color: rgb(255, 201, 83);
+    }
+}
+
+#photographer-about {
+    .photo-icon {
+        p {
+            font-size: 20px;
+        }
+
+        ul li {
+            list-style: none;
+
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+#photographer-main {
+    p {
+        font-size: 20px;
+    }
+
+}
+
+#brands-header {
+    width: 100%;
+    background-image: url(https://brands.photoshelter.com/wp-content/uploads/2022/11/PSB-Home-Page-Hero-Image-1.jpg);
+
+    .brands-header-text {
+        padding: 200px 0 0 100px;
+
+        h1 {
+            font-size: 55px;
+            padding: 10px 0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .brands-header-img {
+        padding: 200px 0 100px 70px;
+    }
+}
+
+#brands-main {
+    h1 {
+        padding: 30px 0;
+    }
+
+    .actives-text {
+        padding: 200px 0;
+    }
+}
+
+#brands-icon {
+    p {
+        font-size: 20px;
+    }
+
+    ul li {
+        list-style: none;
+
+        a {
+            font-size: 25px;
+        }
+    }
+
+    .AI-tagging {
+        .AI-tagging-text {
+            padding: 200px 0;
+        }
+    }
+}
+
+#examples {
+    .photographer-end {
+        h1 {
+            padding: 50px 0;
+        }
+
+        .btn {
+            background-color: rgb(255, 201, 83);
+            padding: 10px 10px;
+            border-radius: 40px;
+            font-size: 20px;
+        }
+    }
+}
+
+// #login {
+//     font-family: 'Montserrat', sans-serif;
+
+//     .container {
+//         height: 100vh;
+//         width: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         background-color: rgb(76, 76, 246);
+//         .form {
+//             max-width: 430px;
+//             width: 100%;
+            
+//             padding: 30px;
+//             border-radius: 6px;
+//             background-color: white;
+//             a{
+//             text-decoration: none;
+//             color: blue;
+//             }
+//             .form-content a{
+//                 &:hover{
+//                     text-decoration: underline;
+//                 }
+//             }
+//             .field{
+//                 position: relative;
+//                 height: 50px;
+//                 width: 100%;
+//                 padding: 10px 0;
+//                 border-radius: 6px;
+              
+//                 input{
+//                     height: 100%;
+//                     width: 100%;
+//                     border: 1px solid #cacaca;
+//                     border-radius: 6px;
+//                     font-size: 16px;
+//                     font-weight: 400;
+//                     outline: none;
+//                     box-shadow:  2px 2px 2px 0px rgb(174, 174, 174);;
+//                 }
+//                 button{
+//                     height: 100%;
+//                     width: 100%;
+//                     border-radius: 6px;
+//                     padding: 0 1px;
+//                     font-size: 16px;
+//                     font-weight: 400;
+//                     background-color: rgb(76, 76, 246);
+//                     color: white;
+//                     transition: 0.3s;
+//                     cursor: pointer;
+//                     &:hover{
+//                         background-color: rgb(115, 115, 247);
+//                     }
+//                 }
+//                 .eye-icon{
+//                     font-size: 18px;
+//                     position: absolute;
+//                     top: 50%;
+//                     right: 10px;
+//                     transform: translateY(-50%);
+//                     cursor: pointer;
+//                     padding: 5px;
+//                 }
+//             }
+
+//             h1 {
+//                 font-size: 28px;
+//                 font-weight: 600;
+//                 color: rgb(39, 39, 39);
+//                 text-align: center;
+//             }
+           
+//             .line{
+//                 position: relative;
+//                 height: 1px;
+//                 width: 100%;
+//                 background-color: grey;
+//                 margin: 36px 0;
+//             }
+//             .line::before{
+//                 content: "Or";
+//                 position: absolute;
+//                 top: 50%;
+//                 left: 50%;
+//                 transform: translate(-50%, -50%);
+//                 background-color: white;
+//                 color: black;
+//                 padding: 0 15px;
+//             }
+//             .media-options{
+//                 padding: 5px 0;
+                
+//                     .google-img{
+//                         position: absolute;
+//                     top: 50%;
+//                     left: 15px;
+//                     transform: translateY(-50%);
+//                         height: 20px;
+//                         width: 20px;                        
+//                     }
+//                     .google{
+//                         height: 50px;
+//                         border: 1px solid grey;
+//                     }
+                
+//             }
+//             .facebook{
+//                 background-color: blue;
+//                 color: white;
+            
+//                 a{
+//                      &:hover{
+//                 text-decoration: none;
+//               }
+//                 }
+//                 i{
+//                     position: absolute;
+//                     top: 50%;
+//                     left: 15px;
+//                     transform: translateY(-50%);
+//                     font-size: 30px;
+//                     padding: 0 5px 0 0;
+
+//                 }
+//               }
+//              a{
+//               display: flex;
+//               align-items: center;
+//               justify-content: center;
+             
+//             }
+//         }
+//         form{
+//             padding: 10px 0;
+//             .form-link{
+//                 padding: 10px 0;
+//                 text-align: center;
+//                 margin-top: 10px;
+            
+            
+//             }
+//             .form-link span, a{
+//                 font-size: 14px;
+//                 font-weight: 400;
+//                 color: rgb(39, 39, 39);
+              
+//             }
+//         }
+
+//     }
+   
+// }
+#login{
+    font-family: 'Montserrat', sans-serif;
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(76, 76, 246);
+        .form {
+            max-width: 430px;
+            width: 100%;
+            
+            padding: 30px;
+            border-radius: 6px;
+            background-color: white;
+            a{
+            text-decoration: none;
+            color: blue;
+            }
+            .form-content a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .field{
+                position: relative;
+                height: 50px;
+                width: 100%;
+                padding: 5px 0;
+                border-radius: 6px;
+              
+                input{
+                    height: 100%;
+                    width: 100%;
+                    border: 1px solid #cacaca;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    outline: none;
+                    box-shadow:  2px 2px 2px 0px rgb(174, 174, 174);;
+                }
+                button{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 6px;
+                    padding: 0 1px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    background-color: rgb(76, 76, 246);
+                    color: white;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(115, 115, 247);
+                    }
+                }
+                .eye-icon{
+                    font-size: 18px;
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    padding: 5px;
+                }
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: 600;
+                color: rgb(39, 39, 39);
+                text-align: center;
+            }
+           
+            .line{
+                position: relative;
+                height: 1px;
+                width: 100%;
+                background-color: grey;
+                margin: 36px 0;
+            }
+            .line::before{
+                content: "Or";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                color: black;
+                padding: 0 15px;
+            }
+            .media-options{
+                padding: 5px 0;
+                
+                    .google-img{
+                        position: absolute;
+                        top: 50%;
+                        left: 15px;
+                        transform: translateY(-50%);
+                        height: 20px;
+                        width: 20px;                        
+                    }
+                    .google{
+                        height: 50px;
+                        border: 1px solid grey;
+                    }
+                
+            }
+            .facebook{
+                background-color: blue;
+                color: white;
+            
+                a{
+                     &:hover{
+                text-decoration: none;
+              }
+                }
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                    font-size: 30px;
+                    padding: 0 5px 0 0;
+
+                }
+              }
+             a{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+             
+            }
+            .signup{
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        .show-signup{
+            .form{
+                .signup{
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+        }
+        .show-signup{
+            .form{
+                .login{
+                    opacity: 1;
+                    pointer-events: none;
+                }
+            }
+        }
+        form{
+            padding: 5px 0;
+            .form-link{
+                padding: 10px 0;
+                text-align: center;
+                margin-top: 10px;
+            
+            
+            }
+            .form-link span, a{
+                font-size: 14px;
+                font-weight: 400;
+                color: rgb(39, 39, 39);
+              
+            }
+        }
+
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+//About-media
+@media(max-width:569px) {
+    .img-about {
+        width: 450px !important;
+    }
+}
+
+@media(max-width:471px) {
+    .img-about {
+        width: 350px !important;
+    }
+}
+
+@media(max-width:360px) {
+    .img-about {
+        width: 280px !important;
+    }
+}
+
+//PhotoShelter-media
+@media(max-width:577px) {
+    .img-photoshelter {
+        width: 300px;
+    }
+}

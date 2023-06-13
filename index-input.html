@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="idInp" type="text" class="validate" >
+                <label for="id">id</label>
+              </div>
+                <div class="input-field col s12">
+                  <input id="imageInp" type="text" class="validate">
+                  <label for="image">image</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="nameInp" type="text" class="validate" >
+                  <label for="name">name</label>
+                </div>
+                  <div class="input-field col s12">
+                    <input  id="jobInp" type="text" class="validate">
+                    <label for="job">job</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input  id="aboutInp" type="text" class="validate">
+                    <label for="about">about</label>
+                  </div>
+                  <button class="btn" id="insert">Insert</button>
+                  <button class="btn" id="update">Update</button>
+                  <button class="btn" id="remove">Remove</button>
+
+              </div>
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <script type="module">
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyA6yf_E4MuebZeKYly1KQ-wVu0rPZEVCGI",
+          authDomain: "index-images.firebaseapp.com",
+          projectId: "index-images",
+          storageBucket: "index-images.appspot.com",
+          messagingSenderId: "1025791373974",
+          appId: "1:1025791373974:web:623ed30bb7ff543b2a88b7"
+        };
+      
+   
+        const app = initializeApp(firebaseConfig);
+        import { getDatabase, set, ref, update, remove, get, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+        const db = getDatabase();
+
+        const idInp = document.getElementById("idInp");
+        const imageInp = document.getElementById("imageInp");
+        const nameInp = document.getElementById("nameInp");
+        const jobInp = document.getElementById("jobInp");
+        const aboutInp = document.getElementById("aboutInp");
+
+
+
+        const insertBtn = document.getElementById("insert");
+        function insertData(){
+           set(ref(db, "index-images/"+idInp.value), {
+                 id: idInp.value,
+                image: imageInp.value,
+                name: nameInp.value,
+                 job: jobInp.value,
+                about: aboutInp.value
+            })
+                .then(alert("Hershey bomba kimidir!!"))
+                .catch(err => alert(err))
+        }
+        insertBtn.addEventListener('click', insertData);
+
+
+
+
+        function UpdateData() {
+            update(ref(db, "index-images/" + idInp.value), {
+                image: imageInp.value,
+                name:  nameInp.value,
+                job: jobInp.value,
+                about: aboutInp.value
+            })
+                .then(alert("Hershey bomba kimidir!!"))
+                .catch(err => alert(err))
+        }
+        const updateBtn = document.getElementById("update");
+
+
+
+
+        function RemoveData() {
+            remove(ref(db, "index-images/", idInp.value))
+                .then("Element silindi!")
+                .catch(err => alert(err))
+        }
+        const removeBtn = document.getElementById("remove");
+      </script>
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
